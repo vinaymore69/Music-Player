@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    gap: 20px;
+  }
+  
+  .music-player {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  button{
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .controls button{
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #1d1d1d;
+    color: #f4f4f4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .controls button:hover{
+    background: white;
+    color: #1d1d1d;
+    transform: translateY(-5px);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    padding: 8px;
+    background: royalblue;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #f4f4f4;
+    border: solid #fff thin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul li:hover {
+    background-color: #fff;
+    border:solid thin;
+    border-color: royalblue;
+    color: royalblue;
+  }
+
+  ul li:hover button{
+    background-color: royalblue;
+    border:solid thin;
+    border-color: white;
+    color: white;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <div class="music-player" style="width: 550px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+    <h1>Music Player</h1>
+    
+    <!-- Available Songs List -->
+    <div id="available-songs-section" style="width: 520px; ">
+      <h2>Available Songs</h2>
+      <ul id="available-songs" style="display: flex; flex-wrap: wrap; justify-content: center; gap:20px; align-items: center;">
+        <!-- List of all available songs with an Add button for each -->
+      </ul>
+      <button onclick="showPlaylist()">View Playlist</button>
+    </div>
+
+    <!-- Playlist Section -->
+    <div id="playlist-section" style="display: none;">
+      <h2>Playlist</h2>
+      <ul id="playlist">
+        <!-- Selected songs will appear here -->
+      </ul>
+      <button onclick="playPlaylist()">Play Playlist</button>
+      <button onclick="showAvailableSongs()">Add More Songs</button>
+    </div>
+
+    <!-- Audio Player Controls -->
+    <div class="controls" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <audio id="audio-player" controls></audio>
+     <div class="triggerbuttons" style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+       
+      <button onclick="previousSong()">Previous</button>
+      <button onclick="togglePlayPause()">Play/Pause</button> 
+     <button onclick="nextSong()">Next</button>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
